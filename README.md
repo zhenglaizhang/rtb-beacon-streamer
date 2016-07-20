@@ -8,8 +8,16 @@ shell> sbt assembly
 
 # Start docker spark cluster here
 
-shell> ~/git/spark/bin/spark-submit --master spark://192.168.1.100:7077 --class net.zhenglai.sparkdemo.BasicAvgApp target/scala-2.11/spark-scala-app.jar
+shell> ~/git/spark/bin/spark-submit --master spark://192.168.1.100:7077 --class net.zhenglai.spark.BasicAvgApp target/scala-2.11/spark-scala-app.jar
+
+shell> bin/spark-submit --master spark://192.168.1.100:7077 --deploy-mode cluster --class net.zhenglai.spark.BasicAvgWithKryoApp target/scala-2.11/spark-scala-app.jar
+
 ```
+
+## Usage
+
+master web: `http://192.168.1.100:8080/`
+work web:   `http://192.168.1.100:8082/` and `http://192.168.1.100:8081`
 
 ## Troubleshooting
 

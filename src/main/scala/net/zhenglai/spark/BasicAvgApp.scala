@@ -1,4 +1,4 @@
-package net.zhenglai.sparkdemo
+package net.zhenglai.spark
 
 import org.apache.spark._
 import org.apache.spark.rdd.RDD
