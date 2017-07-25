@@ -1,6 +1,10 @@
 # spark-scala-template
 Spark Scala App sbt project template
 
+## TODO
+
+- https://github.com/holdenk/spark-testing-base
+
 ## Run
 
 ```bash
